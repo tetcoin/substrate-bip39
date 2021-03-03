@@ -68,7 +68,7 @@ mod test {
 
     // phrase, entropy, seed, expanded secret_key
     //
-    // ALL SEEDS GENERATED USING "Substrate" PASSWORD!
+    // ALL SEEDS GENERATED USING "Tetcore" PASSWORD!
     static VECTORS: &[[&str; 3]] = &[
         [
             "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
@@ -201,8 +201,8 @@ mod test {
             let expected_seed: Vec<u8> = vector[2].from_hex().unwrap();
 
             let mnemonic = Mnemonic::from_phrase(phrase, Language::English).unwrap();
-            let seed = seed_from_entropy(mnemonic.entropy(), "Substrate").unwrap();
-            let secret = mini_secret_from_entropy(mnemonic.entropy(), "Substrate").unwrap().to_bytes();
+            let seed = seed_from_entropy(mnemonic.entropy(), "Tetcore").unwrap();
+            let secret = mini_secret_from_entropy(mnemonic.entropy(), "Tetcore").unwrap().to_bytes();
 
             assert_eq!(mnemonic.entropy(), &expected_entropy[..], "Entropy is incorrect for {}", phrase);
             assert_eq!(&seed[..], &expected_seed[..], "Seed is incorrect for {}", phrase);

@@ -1,12 +1,13 @@
 [package]
-name = "substrate-bip39"
+name = "tetcore-bip39"
 version = "0.4.2"
 authors = ["Parity Technologies <admin@parity.io>"]
 license = "Apache-2.0"
 edition = "2018"
-description = "Converting BIP39 entropy to valid Substrate (sr25519) SecretKeys"
-documentation = "https://docs.rs/substrate-bip39"
-repository = "https://github.com/paritytech/substrate-bip39"
+description = "Converting BIP39 entropy to valid Tetcore (sr25519) SecretKeys"
+homepage = "https://github.com/tetcoin/tetcore-bip39
+documentation = "https://docs.rs/tetcore-bip39"
+repository = "https://github.com/tetcoin/tetcore-bip39"
 
 [dependencies]
 pbkdf2 = { version = "0.3.0", default-features = false }

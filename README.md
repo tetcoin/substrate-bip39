@@ -19,4 +19,4 @@ PBKDF2 was kept in place, along with the password. Using 24 words (with its 256 
 
 ## Why not ditch BIP39 altogether?
 
-Because there are hardware wallets that use a single phrase for the entire device, and operate multiple accounts on multiple networks using that. A completely different wordlist would make their life much harder when it comes to providing future Substrate support.
+Because there are hardware wallets that use a single phrase for the entire device, and operate multiple accounts on multiple networks using that. A completely different wordlist would make their life much harder when it comes to providing future Tetcore support.
